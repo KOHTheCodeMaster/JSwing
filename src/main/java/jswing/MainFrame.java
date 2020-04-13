@@ -1,13 +1,13 @@
 package jswing;
 
+import jswing.customComponents.TextPanel;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MainFrame extends JFrame {
 
-    private JTextArea textArea;
+    private TextPanel textPanel;
     private JButton btn;
 
     public MainFrame() {
@@ -28,17 +28,17 @@ public class MainFrame extends JFrame {
 
     }
 
-    private void initializeListeners() {
+    private void initializeDataMembers() {
 
-        //  Add ActionListener to the btn
-        btn.addActionListener((actionEvent) -> textArea.append("\nHola..!! :D\n"));
+        textPanel = new TextPanel();
+        btn = new JButton("Submit");
 
     }
 
-    private void initializeDataMembers() {
+    private void initializeListeners() {
 
-        textArea = new JTextArea();
-        btn = new JButton("Submit");
+        //  Add ActionListener to the btn
+        btn.addActionListener((actionEvent) -> textPanel.appendText("\nHola..!! :D\n"));
 
     }
 
@@ -48,7 +48,7 @@ public class MainFrame extends JFrame {
         setLayout(new BorderLayout());
 
         //  Add components to the frame according to the border layout
-        add(textArea, BorderLayout.NORTH);
+        add(textPanel, BorderLayout.CENTER);
         add(btn, BorderLayout.SOUTH);
 
     }

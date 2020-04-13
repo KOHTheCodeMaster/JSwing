@@ -3,6 +3,13 @@
  *
  *  <| ================================================================ |>
  *
+ *  4th Commit - TextPanel
+ *  Time Stamp: 13th April 2K20, 06:31 AM..!!
+ *
+ *  Moved textArea to custom component TextPanel.
+ *
+ *  <| ================================================================ |>
+ *
  *  3rd Commit - Button ActionListener
  *  Time Stamp: 13th April 2K20, 06:17 AM..!!
  *

@@ -15,12 +15,7 @@ public class App {
          *  Creating an Anonymous class that implements the Runnable interface
          *  to define the run method.
          */
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                MainFrame mainFrame = new MainFrame();
-            }
-        });
+        SwingUtilities.invokeLater(MainFrame::new);
 
     }
 
@@ -28,10 +23,10 @@ public class App {
 
 /*
  *  Date Created:   13th April 2K20, 05:35 AM..!!
- *  Last Modified:  13th April 2K20, 06:17 AM..!!
+ *  Last Modified:  13th April 2K20, 06:31 AM..!!
  *
- *  3rd Commit - Button ActionListener
- *  Added ActionListener to btn in MainFrame, appends specified String to the textArea when clicked.
+ *  4th Commit - TextPanel
+ *  Moved textArea to custom component TextPanel.
  *
  *  Code Developed By,
  *  ~K.O.H..!! ^__^
