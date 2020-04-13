@@ -18,20 +18,7 @@ public class App {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-
-                //  Using JFrame component with parameterized constructor to set
-                //  the title of the frame as "First JFrame".
-                JFrame frame = new JFrame("First JFrame");
-
-                //  Set frame to be visible.
-                frame.setVisible(true);
-
-                //  Set frame size to 1280x720. (Pixels)
-                frame.setSize(1280, 720);
-
-                //  Set default close operation to exit.
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+                MainFrame mainFrame = new MainFrame();
             }
         });
 
@@ -41,12 +28,12 @@ public class App {
 
 /*
  *  Date Created:   13th April 2K20, 05:35 AM..!!
- *  Last Modified:  13th April 2K20, 05:35 AM..!!
+ *  Last Modified:  13th April 2K20, 06:07 AM..!!
  *
- *  Change Log:
+ *  2nd Commit - Main Frame
  *
- *  Init Commit - First JFrame
- *  Basic JFrame with specified Title and width.
+ *  1. Added New Class named MainFrame extending JFrame to handle all the frame operations.
+ *  2. Added JTextArea and JButton to the MainFrame according to the Border Layout.
  *
  *  Code Developed By,
  *  ~K.O.H..!! ^__^
