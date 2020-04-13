@@ -28,12 +28,10 @@ public class App {
 
 /*
  *  Date Created:   13th April 2K20, 05:35 AM..!!
- *  Last Modified:  13th April 2K20, 06:07 AM..!!
+ *  Last Modified:  13th April 2K20, 06:17 AM..!!
  *
- *  2nd Commit - Main Frame
- *
- *  1. Added New Class named MainFrame extending JFrame to handle all the frame operations.
- *  2. Added JTextArea and JButton to the MainFrame according to the Border Layout.
+ *  3rd Commit - Button ActionListener
+ *  Added ActionListener to btn in MainFrame, appends specified String to the textArea when clicked.
  *
  *  Code Developed By,
  *  ~K.O.H..!! ^__^

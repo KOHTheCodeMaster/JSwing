@@ -2,6 +2,8 @@ package jswing;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainFrame extends JFrame {
 
@@ -18,9 +20,18 @@ public class MainFrame extends JFrame {
 
         initializeDataMembers();
 
+        initializeListeners();
+
         initializeLayoutSettings();
 
         initializeFrameSettings();
+
+    }
+
+    private void initializeListeners() {
+
+        //  Add ActionListener to the btn
+        btn.addActionListener((actionEvent) -> textArea.append("\nHola..!! :D\n"));
 
     }
 

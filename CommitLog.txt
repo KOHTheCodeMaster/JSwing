@@ -3,6 +3,13 @@
  *
  *  <| ================================================================ |>
  *
+ *  3rd Commit - Button ActionListener
+ *  Time Stamp: 13th April 2K20, 06:17 AM..!!
+ *
+ *  1. Added ActionListener to btn in MainFrame, appends specified String to the textArea when clicked.
+ *
+ *  <| ================================================================ |>
+ *
  *  2nd Commit - Main Frame
  *  Time Stamp: 13th April 2K20, 06:07 AM..!!
  *
