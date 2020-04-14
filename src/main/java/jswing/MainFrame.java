@@ -10,7 +10,6 @@ public class MainFrame extends JFrame {
 
     private Toolbar toolbar;
     private TextPanel textPanel;
-    private JButton btn;
 
     public MainFrame() {
 
@@ -34,14 +33,13 @@ public class MainFrame extends JFrame {
 
         toolbar = new Toolbar();
         textPanel = new TextPanel();
-        btn = new JButton("Submit");
 
     }
 
     private void initializeListeners() {
 
-        //  Add ActionListener to the btn
-        btn.addActionListener((actionEvent) -> textPanel.appendText("\nHola..!! :D\n"));
+        //  Set toolbarListener to the toolbar
+        toolbar.setToolbarListener(str -> textPanel.appendText(str));
 
     }
 
@@ -53,7 +51,6 @@ public class MainFrame extends JFrame {
         //  Add components to the frame according to the border layout
         add(toolbar, BorderLayout.NORTH);
         add(textPanel, BorderLayout.CENTER);
-        add(btn, BorderLayout.SOUTH);
 
     }
 
