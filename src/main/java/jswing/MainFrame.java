@@ -1,5 +1,6 @@
 package jswing;
 
+import jswing.customComponents.FormPanel;
 import jswing.customComponents.TextPanel;
 import jswing.customComponents.Toolbar;
 
@@ -10,6 +11,7 @@ public class MainFrame extends JFrame {
 
     private Toolbar toolbar;
     private TextPanel textPanel;
+    private FormPanel formPanel;
 
     public MainFrame() {
 
@@ -31,6 +33,7 @@ public class MainFrame extends JFrame {
 
     private void initializeDataMembers() {
 
+        formPanel = new FormPanel();
         toolbar = new Toolbar();
         textPanel = new TextPanel();
 
@@ -49,6 +52,7 @@ public class MainFrame extends JFrame {
         setLayout(new BorderLayout());
 
         //  Add components to the frame according to the border layout
+        add(formPanel, BorderLayout.WEST);
         add(toolbar, BorderLayout.NORTH);
         add(textPanel, BorderLayout.CENTER);
 

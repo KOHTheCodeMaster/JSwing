@@ -25,6 +25,8 @@ public class Toolbar extends JPanel implements ActionListener {
         //  set layout for the textPanel
         setLayout(new FlowLayout(FlowLayout.CENTER));
 
+        setBorder(BorderFactory.createEtchedBorder());
+
         add(heyBtn);
         add(byeBtn);
     }
@@ -43,10 +45,6 @@ public class Toolbar extends JPanel implements ActionListener {
 
         }
 
-    }
-
-    public ToolbarListener getToolbarListener() {
-        return toolbarListener;
     }
 
     public void setToolbarListener(ToolbarListener toolbarListener) {
