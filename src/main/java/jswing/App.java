@@ -23,10 +23,10 @@ public class App {
 
 /*
  *  Date Created:   13th April 2K20, 05:35 AM..!!
- *  Last Modified:  13th April 2K20, 06:31 AM..!!
+ *  Last Modified:  14th April 2K20, 07:32 PM..!!
  *
- *  4th Commit - TextPanel
- *  Moved textArea to custom component TextPanel.
+ *  5th Commit - Toolbar
+ *  Added Toolbar with 2 Buttons.
  *
  *  Code Developed By,
  *  ~K.O.H..!! ^__^
